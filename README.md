@@ -1,4 +1,4 @@
-Итоговый проект (пример) курса "Машинное обучение в бизнесе"
+### Итоговый проект (пример) курса "Машинное обучение в бизнесе"
 
 Стек:
 
@@ -10,28 +10,27 @@ ML: sklearn, pandas, numpy API: flask
 
 Используемые признаки:
 
-'ssc_p' - Secondary Education percentage- 10th Grade (float)
+  *'ssc_p' - Secondary Education percentage- 10th Grade (float)
 
-'hsc_p' - Higher Secondary Education percentage- 12th Grade (float)
+  *'hsc_p' - Higher Secondary Education percentage- 12th Grade (float)
 
-'degree_p'- Degree Percentage (float)
+  *'degree_p'- Degree Percentage (float)
 
 
 Модель: LinearRegression
 
 Клонируем репозиторий и создаем образ
 
-$ git clone https://github.com/tabaccopie/ml_bs_course_prj.git
+```$ git clone https://github.com/tabaccopie/ml_bs_course_prj.git
 
 $ cd ml_bs_course_prj
 
 $ docker build -t ilyak_ds_app .
+```
 
 Запускаем контейнер
 
-Здесь Вам нужно создать каталог локально и сохранить туда предобученную модель (<your_local_path_to_pretrained_models> нужно заменить на полный путь к этому каталогу)
-
-$ docker run -d -p 8180:8180 -p 8181:8181 -v :/app/app/models username/ml_bs_course_prj
+```$ docker run -p 8180:8180 -p 8181:8181 ilyak_ds_app```
 
 Переходим на localhost:8181
 
