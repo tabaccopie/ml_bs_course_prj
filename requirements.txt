@@ -3,8 +3,6 @@ numpy
 pandas
 dill
 requests
-json
-urllib
 flask
 flask-wtf
 wtforms
