@@ -7,3 +7,4 @@ json
 urllib
 flask
 flask-wtf
+wtforms
