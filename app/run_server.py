@@ -25,7 +25,7 @@ def load_model(model_path):
 	with open(model_path, 'rb') as f:
 		model = dill.load(f)
 
-modelpath = "models/pipeline.dill"
+modelpath = "/app/app/models/pipeline.dill"
 load_model(modelpath)
 
 @app.route("/", methods=["GET"])
