@@ -52,7 +52,7 @@ def predict():
 		preds = model.predict(pd.DataFrame({"ssc_p": [ssc_p],
 												  "hsc_p": [hsc_p],
 												  "degree_p": [degree_p]}))
-		data["predictions"] = round(preds[:1][0][0], 2)
+		data["predictions"] = preds[:1][0]
 		#data["ssc_p"] = ssc_p
 		# indicate that the request was a success
 		data["success"] = True
