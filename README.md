@@ -16,6 +16,7 @@ ML: sklearn, pandas, numpy API: flask
 
 
 Модель: LinearRegression
+
 Клонируем репозиторий и создаем образ
 
 $ git clone https://github.com/tabaccopie/ml_bs_course_prj.git
