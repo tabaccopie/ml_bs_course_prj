@@ -31,7 +31,7 @@ $ docker build -t ilyak_ds_app .
 
 Запускаем контейнер
 
-```$ docker run -p 8180:8180 -p 8181:8181 ilyak_ds_app```
+```$ docker run -d -p 8180:8180 -p 8181:8181 ilyak_ds_app```
 
 Переходим на localhost:8181
 
