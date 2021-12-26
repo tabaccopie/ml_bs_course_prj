@@ -23,15 +23,15 @@ ML: sklearn, pandas, numpy API: flask
 
 $ git clone https://github.com/tabaccopie/ml_bs_course_prj.git
 
-$ cd ml_bs_course_prj.git
+$ cd ml_bs_course_prj
 
-$ docker build -t <user>/ml_bs_course_prj .
+$ docker build -t ilyak_ds_app .
 
 Запускаем контейнер
 
 Здесь Вам нужно создать каталог локально и сохранить туда предобученную модель (<your_local_path_to_pretrained_models> нужно заменить на полный путь к этому каталогу)
 
-$ docker run -d -p 8180:8180 -p 8181:8181 -v <your_local_path_to_pretrained_models>:/app/models user/ml_bs_course_prj
+$ docker run -d -p 8180:8180 -p 8181:8181 -v :/app/app/models username/ml_bs_course_prj
 
 Переходим на localhost:8181
 
