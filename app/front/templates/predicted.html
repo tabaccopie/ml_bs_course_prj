@@ -24,9 +24,9 @@
         </div>
         <div class="card-body">
             {% if response.error == 'ConnectionError' %}
-                <p class="card-text text-center">Нет связи с ML сервисом</p>
+                <p class="card-text text-center">No connection to the ML service</p>
             {% else %}
-                <p class="card-text text-center">Ошибка ML сервиса</p>
+                <p class="card-text text-center">ML service error</p>
         {% endif %}
         <div class="text-center">
                 <a href="{{ url_for('predict_form') }}" class="btn btn-primary">Назад</a>
