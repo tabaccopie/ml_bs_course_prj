@@ -19,7 +19,9 @@ ML: sklearn, pandas, numpy API: flask
 Клонируем репозиторий и создаем образ
 
 $ git clone https://github.com/tabaccopie/ml_bs_course_prj.git
+
 $ cd ml_bs_course_prj.git
+
 $ docker build -t <user>/ml_bs_course_prj .
 
 Запускаем контейнер
