@@ -17,7 +17,7 @@ ML: sklearn, pandas, numpy API: flask
   * 'degree_p'- Degree Percentage (float)
 
 
-Модель: LinearRegression
+Модель: LogisticRegression
 
 Клонируем репозиторий и создаем образ
 
