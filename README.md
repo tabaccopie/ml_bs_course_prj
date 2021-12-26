@@ -3,6 +3,7 @@
 Стек:
 
 ML: sklearn, pandas, numpy API: flask 
+
 Данные: с kaggle - https://www.kaggle.com/benroshan/factors-affecting-campus-placement
 
 Задача: предсказать по характеристикам студента возможность его устройства на работу. Бинарная классификация.
