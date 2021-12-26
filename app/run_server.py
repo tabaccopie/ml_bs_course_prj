@@ -25,7 +25,8 @@ def load_model(model_path):
 	with open(model_path, 'rb') as f:
 		model = dill.load(f)
 
-modelpath = "/app/app/models/pipeline.dill"
+#modelpath = "/app/app/models/pipeline.dill"
+modelpath = "models/pipeline.dill"
 load_model(modelpath)
 
 @app.route("/", methods=["GET"])
@@ -52,7 +53,7 @@ def predict():
 		preds = model.predict(pd.DataFrame({"ssc_p": [ssc_p],
 												  "hsc_p": [hsc_p],
 												  "degree_p": [degree_p]}))
-		data["predictions"] = preds[:1][0]
+		data["predictions"] = int(preds[:1][0])
 		#data["ssc_p"] = ssc_p
 		# indicate that the request was a success
 		data["success"] = True
