@@ -10,18 +10,19 @@ ML: sklearn, pandas, numpy API: flask
 
 Используемые признаки:
 
-  *'ssc_p' - Secondary Education percentage- 10th Grade (float)
-
-  *'hsc_p' - Higher Secondary Education percentage- 12th Grade (float)
-
-  *'degree_p'- Degree Percentage (float)
+  'ssc_p' - Secondary Education percentage- 10th Grade (float)
+  
+  'hsc_p' - Higher Secondary Education percentage- 12th Grade (float)
+  
+  'degree_p'- Degree Percentage (float)
 
 
 Модель: LinearRegression
 
 Клонируем репозиторий и создаем образ
 
-```$ git clone https://github.com/tabaccopie/ml_bs_course_prj.git
+```
+$ git clone https://github.com/tabaccopie/ml_bs_course_prj.git
 
 $ cd ml_bs_course_prj
 
